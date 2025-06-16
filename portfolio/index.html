@@ -126,6 +126,48 @@
                 margin-bottom: 2rem;
             }
         }
+
+        .services-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-box {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-box h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -149,6 +191,23 @@
             </div>
             <div class="hero-image">
                 <img src="https://picsum.photos/id/1/200/300" alt="Developer Profile">
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="services-grid">
+                <div class="service-box">
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive and interactive user interfaces using modern technologies like React.js, HTML5, CSS3, and JavaScript. Focus on delivering smooth user experiences and pixel-perfect designs.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Backend Development</h3>
+                    <p>Building robust server-side applications with Node.js and Express.js. Implementing RESTful APIs, database management with MongoDB, and ensuring secure and scalable backend solutions.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Mobile Development</h3>
+                    <p>Developing cross-platform mobile applications using React Native. Creating native-like experiences while maintaining code reusability and performance across iOS and Android platforms.</p>
+                </div>
             </div>
         </section>
     </main>
