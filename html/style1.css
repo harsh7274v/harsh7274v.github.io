@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fa;
+  color: #222;
+}
+
+h1, h6 {
+  margin: 0.5em 0;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin: 2em 0;
+}
+
+/* Flexbox Layout for Main Content */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  margin: 2rem 0;
+  width: 90%;
+  max-width: 900px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+p, pre {
+  margin: 1em 0;
+}
+
+pre {
+  background: #f0f4f8;
+  padding: 1em;
+  border-radius: 8px;
+  font-size: 1em;
+  overflow-x: auto;
+}
+
+mark {
+  background: #ffe066;
+  padding: 0 0.2em;
+  border-radius: 3px;
+}
+
+strong {
+  color: #1976d2;
+}
+
+u {
+  text-decoration: underline wavy #1976d2;
+}
+
+del {
+  color: #e57373;
+}
+
+meter, progress {
+  width: 100%;
+  height: 1.2em;
+  margin: 0.5em 0;
+}
+
+abbr {
+  border-bottom: 1px dotted #1976d2;
+  cursor: help;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: 2.2rem;
+  color: #1976d2;
+}
+h6 {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Utility Classes */
+.center {
+  text-align: center;
+}
+
+/* Custom for sub/sup */
+h1 sub, h1 sup {
+  font-size: 0.6em;
+} 
